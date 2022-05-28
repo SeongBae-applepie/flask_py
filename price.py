@@ -1,5 +1,5 @@
 def shopping(shop_file):
-  if shop_file == 'shopA.txt'
+  if shop_file == 'shopA.txt':
     with open("data/"+ shop_file) as f:  
       lines = f.read()  
       aa = lines.replace("오레ㄴ지","오렌지")
