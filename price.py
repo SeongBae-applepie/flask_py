@@ -1,3 +1,5 @@
+#a
+
 def shopping(shop_file):
   if shop_file == 'shopA.txt':
     with open("data/"+ shop_file) as f:  
