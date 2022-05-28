@@ -1,8 +1,11 @@
 def shopping(shop_file):
   if shop_file == 'shopA.txt':
-    with open("data/"+ shop_file ,"w") as f: #Str 
-    aa = lines.replace("오레ㄴ지","오렌지")
-    f.write(aa)
+    with open("data/shopA.txt") as f: #Str 
+      lines = f.read()  
+
+    with open("data/shopA.txt","w") as f: #Str 
+      aa = lines.replace("오레ㄴ지","오렌지")
+      f.write(aa)
   
   shop_dict = {}  # 생성할 사전 객체
   with open("data/" + shop_file, 'r') as f:
